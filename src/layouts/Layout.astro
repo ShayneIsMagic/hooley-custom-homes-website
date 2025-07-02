@@ -1,0 +1,57 @@
+---
+const { title, description, keywords } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description || ""} />
+    <meta name="keywords" content={keywords || ""} />
+    <title>{title || ""}</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Hooley Custom Homes LLC" />
+    <meta name="theme-color" content="#51a9df" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hooleycustomhomes.com/" />
+    <meta property="og:title" content={title || "Hooley Custom Homes LLC"} />
+    <meta property="og:description" content={description || "Custom Home Builder in Sanpete & Juab County, Utah"} />
+    <meta property="og:image" content="https://hooleycustomhomes.com/hooley-logo.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hooleycustomhomes.com/" />
+    <meta property="twitter:title" content={title || "Hooley Custom Homes LLC"} />
+    <meta property="twitter:description" content={description || "Custom Home Builder in Sanpete & Juab County, Utah"} />
+    <meta property="twitter:image" content="https://hooleycustomhomes.com/hooley-logo.png" />
+    
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="icon" type="image/png" href="/hooley-logo.png" />
+    <link rel="apple-touch-icon" href="/hooley-logo.png" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+
+  <body>
+    <slot />
+  </body>
+
+  <script src="/js/main.js" defer></script>
+</html>

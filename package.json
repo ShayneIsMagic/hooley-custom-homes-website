@@ -1,0 +1,28 @@
+{
+  "name": "hooley-custom-homes-astro",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Hooley Custom Homes LLC - Custom Home Builder in Sanpete & Juab County",
+  "keywords": ["custom homes", "construction", "renovation", "remodel", "utah"],
+  "author": "Hooley Custom Homes LLC",
+  "license": "MIT",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "clean": "rm -rf dist",
+    "deploy": "npm run build"
+  },
+  "dependencies": {
+    "astro": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hooleycustomhomes/website.git"
+  },
+  "homepage": "https://hooleycustomhomes.com"
+}

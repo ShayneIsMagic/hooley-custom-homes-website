@@ -1,0 +1,45 @@
+---
+const { pathname } = Astro.url;
+
+function normalize(path: String) {
+  return path.endsWith("/") && path !== "/" ? path.slice(0, -1) : path;
+}
+
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Projects", href: "/projects" },
+];
+---
+
+<!-- Header -->
+<header>
+  <div class="container header-container">
+    <div class="logo">
+      <img src="/hooley-logo.png" alt="Hooley Custom Homes LLC Logo" />
+    </div>
+    <div class="mobile-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links">
+      <!-- <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="projects.html">Projects</a></li> -->
+      {
+        navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class={normalize(pathname) === link.href ? "active" : undefined}
+            >
+              {link.name}
+            </a>
+          </li>
+        ))
+      }
+      <li><a href="/contact" class="cta-button">Contact Us</a></li>
+    </ul>
+  </div>
+</header>

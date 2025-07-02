@@ -1,0 +1,213 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+import { getServicesWithMetadata, getProjectsWithMetadata } from "../data/project-metadata.js";
+
+const services = getServicesWithMetadata();
+const projects = getProjectsWithMetadata();
+---
+
+<Layout
+  title="Hooley Custom Homes LLC - Custom Home Builder in Sanpete & Juab County"
+  description="Hooley Custom Homes LLC - Premier custom home builder serving Sanpete & Juab County. We bring to life the homes people dream of with quality craftsmanship and exceptional service."
+>
+  <Header />
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <h1>We Don't Just Build Homes, We Build Relationships</h1>
+      <p>Bringing to life the homes people dream of in Sanpete & Juab County</p>
+      <div class="hero-buttons">
+        <a href="projects.html" class="btn btn-primary">View Our Projects</a>
+        <a href="contact.html" class="btn btn-secondary">Get A Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Hooley Custom Homes</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <img
+            src="/images/placeholder-home.jpg"
+            alt="Hooley Custom Homes Project"
+          />
+        </div>
+        <div class="about-text">
+          <h3>Your Vision, Our Expertise</h3>
+          <p>
+            At Hooley Custom Homes, we're more than just builders - we're dream
+            makers. With years of experience in custom home construction,
+            renovations, and remodels, we take pride in turning your vision into
+            reality.
+          </p>
+          <p>
+            Our team of skilled professionals is dedicated to quality
+            craftsmanship, attention to detail, and exceptional customer
+            service. We believe in building not just beautiful homes, but
+            lasting relationships with our clients.
+          </p>
+          <p>
+            Whether you're looking to build your dream home from the ground up,
+            renovate an existing space, or add custom features to your current
+            home, Hooley Custom Homes is your trusted partner in Sanpete and
+            Juab counties.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Our Services</h2>
+      </div>
+      <div class="services-grid">
+        {services.map((service) => (
+          <div class="service-card">
+            <div
+              class="service-image"
+              style={`background-image: url('${service.image}')`}
+            >
+            </div>
+            <div class="service-content">
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+              {/* <div class="service-metadata">
+                <span class="metadata-tag">{service.metadata.quality}</span>
+                <span class="metadata-tag">{service.metadata.dimensions}</span>
+                <span class="metadata-tag">{service.metadata.format.toUpperCase()}</span>
+              </div> */}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2>Custom Home Plans</h2>
+      </div>
+      <div class="main-projects-grid">
+        {projects.map((project) => (
+          <div class="main-project-card">
+            <div
+              class="main-project-image"
+              style={`background-image: url('${project.image}')`}
+            >
+            </div>
+            <div class="main-project-overlay">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              {/* <div class="project-metadata">
+                <span class="metadata-tag">{project.metadata.quality}</span>
+                <span class="metadata-tag">{project.metadata.dimensions}</span>
+                {project.metadata.features && (
+                  <span class="metadata-tag features">{project.metadata.features}</span>
+                )}
+              </div> */}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div style="text-align: center; margin-top: 40px">
+        <a href="projects.html" class="btn btn-primary">View More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            <p>
+              "Hooley Custom Homes exceeded our expectations in every way. Their
+              attention to detail and quality craftsmanship is unmatched. We
+              couldn't be happier with our dream home."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div
+              class="author-image"
+              style="background-image: url('/api/placeholder/100/100')"
+            >
+            </div>
+            <div>
+              <h4>John & Sarah Thompson</h4>
+              <p>Custom Home Build</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            <p>
+              "The team at Hooley was professional from start to finish. They
+              listened to our needs and delivered a beautiful kitchen remodel
+              that transformed our entire home."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div
+              class="author-image"
+              style="background-image: url('/api/placeholder/100/100')"
+            >
+            </div>
+            <div>
+              <h4>Mike Johnson</h4>
+              <p>Kitchen Remodel</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            <p>
+              "Our basement apartment has been generating income for over a year
+              now thanks to Hooley Custom Homes. They handled everything from
+              permits to finishing touches."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div
+              class="author-image"
+              style="background-image: url('/api/placeholder/100/100')"
+            >
+            </div>
+            <div>
+              <h4>The Andersons</h4>
+              <p>Basement Apartment Conversion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta" id="contact">
+    <div class="container">
+      <h2>Ready to Build Your Dream Home?</h2>
+      <p>
+        Contact us today for a free consultation and let's bring your vision to
+        life.
+      </p>
+      <a href="contact.html" class="btn">Get In Touch</a>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

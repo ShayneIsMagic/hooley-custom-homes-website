@@ -1,0 +1,708 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Our Projects - Hooley Custom Homes | Custom Home Portfolio in Central Utah"
+  description="Explore our portfolio of custom homes, renovations, and specialty projects throughout Sanpete, Juab, and surrounding counties. View our completed projects and floor plans."
+  keywords="custom home portfolio, home projects, floor plans, Sanpete County homes, Juab County builder, custom home gallery, renovation projects"
+>
+  <Header />
+
+  <!-- Page Banner -->
+  <section
+    class="page-banner"
+    style="
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('/images/field-3.JPG');
+      "
+  >
+    <div class="container banner-content">
+      <h1>Our Projects</h1>
+      <p>
+        Explore our diverse portfolio of custom homes, renovations, and
+        specialty projects throughout Central Utah
+      </p>
+    </div>
+  </section>
+
+  <!-- Featured Project -->
+  <section class="section featured-project">
+    <div class="container">
+      <div class="section-header">
+        <h2>Featured Project</h2>
+      </div>
+      <div class="featured-content">
+        <div class="featured-image">
+          <img
+            src="/images/custom-home.jpeg"
+            alt="Dream Home Project - Custom Home in Fairview"
+          />
+        </div>
+        <div class="featured-text">
+          <h3>Dream Home Project</h3>
+          <p>
+            A stunning custom home featuring modern design and energy-efficient
+            solutions for a sustainable lifestyle. This project incorporated
+            sustainable building materials and innovative architectural
+            features, resulting in a beautiful and functional home that exceeded
+            the client's expectations.
+          </p>
+          <p>
+            The home combines environmental consciousness with elegant design,
+            showcasing Hooley's ability to blend aesthetics and practicality
+            while honoring Central Utah's distinctive landscape.
+          </p>
+          <ul class="featured-highlights">
+            <li>3,200 sq ft of custom living space</li>
+            <li>Energy-efficient design and materials</li>
+            <li>Custom architectural features</li>
+            <li>Modern amenities with classic appeal</li>
+            <li>Sustainable building practices</li>
+          </ul>
+          <a href="contact.html" class="btn">Start Your Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Portfolio -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Explore Custom Designs</h2>
+      </div>
+      <div class="projects-intro">
+        <p>
+          Pick your custom home from a range of thoughtfully designed new
+          builds, renovations, and specialty projects across Sanpete, Juab, and
+          surrounding counties. Each home reflects a unique collaboration
+          between our team and homeowners, crafted to be both beautiful and
+          functional.
+        </p>
+      </div>
+
+      <!-- Project Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">
+          All Projects
+        </button>
+        <button class="filter-btn" data-filter="custom-homes">
+          Custom Homes
+        </button>
+        <button class="filter-btn" data-filter="additions">Additions</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <div class="project-card" data-category="custom-homes">
+          <div
+            class="project-image"
+            style="background-image: url('/images/Mountain Retreat with Wrap Around Deck and a Vaulted Central Core.avif')"
+          >
+            <div class="project-overlay">
+              <h4>Mountain Retreat</h4>
+              <p>
+                Peaceful mountain living with elevated views and rustic
+                elegance.
+              </p>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Mountain Retreat</h3>
+            <p>
+              A secluded mountain hideaway designed for year-round comfort.
+              Natural materials and a vaulted central core create a welcoming
+              space with panoramic views.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Mountain Living</span>
+              <span class="project-tag">Vaulted Ceilings</span>
+              <span class="project-tag">Timber Accents</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="custom-homes">
+          <div
+            class="project-image"
+            style="background-image: url('/images/Modern Farmhouse.avif')"
+          >
+            <div class="project-overlay">
+              <h4>Modern Farmhouse</h4>
+              <p>
+                Classic charm meets modern design in this fresh farmhouse build.
+              </p>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Modern Farmhouse</h3>
+            <p>
+              Blending rustic charm with clean modern lines, this farmhouse
+              balances traditional warmth with contemporary open-concept living.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Farmhouse Style</span>
+              <span class="project-tag">Open Floor Plan</span>
+              <span class="project-tag">Rustic Meets Modern</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="custom-homes">
+          <div
+            class="project-image"
+            style="background-image: url('/images/Modern Farmhouse Plan with French Door Greeting.avif')"
+          >
+            <div class="project-overlay">
+              <h4>French Door Greeting</h4>
+              <p>
+                Graceful French doors set the tone for a warm, inviting home.
+              </p>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>French Door Greeting</h3>
+            <p>
+              An inviting entry with classic French doors sets the tone for this
+              elegant, airy custom home built for comfort and curb appeal.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Elegant Entryway</span>
+              <span class="project-tag">Curb Appeal</span>
+              <span class="project-tag">Light-Filled Spaces</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="custom-homes">
+          <div
+            class="project-image"
+            style="background-image: url('/images/Modern Man Cave.avif')"
+          >
+            <div class="project-overlay">
+              <h4>Modern Man Cave</h4>
+              <p>
+                A bold, stylish space designed for work, relaxation, and play.
+              </p>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Modern Man Cave</h3>
+            <p>
+              A sleek retreat with bold finishes and tailored spaces for
+              entertaining, relaxing, or working from home — this build
+              redefines the “man cave.”
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Entertainment Space</span>
+              <span class="project-tag">Bold Interiors</span>
+              <span class="project-tag">Statement Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="custom-homes">
+          <div
+            class="project-image"
+            style="background-image: url('/images/Modern Mountain House Plan with Panoramic Views Expansion.avif')"
+          >
+            <div class="project-overlay">
+              <h4>Modern Mountain House</h4>
+              <p>
+                Expansive views and indoor-outdoor flow define this modern home.
+              </p>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Modern Mountain House</h3>
+            <p>
+              Perched above breathtaking vistas, this home features dramatic
+              windows, natural textures, and a seamless connection between
+              indoor and outdoor spaces.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Panoramic Views</span>
+              <span class="project-tag">Scenic Design</span>
+              <span class="project-tag">Indoor-Outdoor Living</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="custom-homes">
+          <div
+            class="project-image"
+            style="background-image: url('/images/New American Farmhouse.avif')"
+          >
+            <div class="project-overlay">
+              <h4>New American Farmhouse</h4>
+              <p>
+                A fresh take on traditional living with generous open space.
+              </p>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>New American Farmhouse</h3>
+            <p>
+              A timeless classic with updated lines and smart layout. This home
+              delivers livability with heritage-inspired aesthetics and spacious
+              family zones.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Modern Heritage</span>
+              <span class="project-tag">Spacious Layout</span>
+              <span class="project-tag">Family Living</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="custom-homes">
+          <div
+            class="project-image"
+            style="background-image: url('/images/Utah Retreat.avif')"
+          >
+            <div class="project-overlay">
+              <h4>Utah Retreat</h4>
+              <p>A relaxing desert escape crafted for style and tranquility.</p>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Utah Retreat</h3>
+            <p>
+              Crafted for relaxation, this home blends regional character with
+              modern livability — a perfect escape for quiet weekends or
+              entertaining guests.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Regional Style</span>
+              <span class="project-tag">Retreat Living</span>
+              <span class="project-tag">Relaxed Luxury</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="additions">
+          <div
+            class="project-image"
+            style="background-image: url('/images/Home Office Addition.avif')"
+          >
+            <div class="project-overlay">
+              <h4>Home Office Addition</h4>
+              <p>A bright, purpose-built space for focus and flexibility.</p>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Home Office Addition</h3>
+            <p>
+              This thoughtful addition transforms unused space into a sunlit
+              home office, offering privacy, productivity, and style.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Smart Additions</span>
+              <span class="project-tag">Remote Work Ready</span>
+              <span class="project-tag">Natural Light</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floor Plans Section -->
+  <section class="section floor-plans" style="display: none;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Sample Floor Plans</h2>
+      </div>
+      <div class="projects-intro">
+        <p>
+          Browse our collection of custom floor plans designed specifically for
+          Central Utah living. While each Hooley home is unique, these designs
+          showcase our approach to creating homes that balance beauty,
+          functionality, and regional appropriateness.
+        </p>
+      </div>
+
+      <div class="floor-plans-grid">
+        <div class="floor-plan-card">
+          <div
+            class="floor-plan-image"
+            style="background-image: url('/images/placeholder-home.jpg')"
+          >
+          </div>
+          <div class="floor-plan-content">
+            <h4>Mountain Retreat</h4>
+            <p>
+              Perfect for those seeking a peaceful getaway with modern amenities
+              and stunning views.
+            </p>
+            <div class="floor-plan-specs">
+              <div class="spec-item">
+                <span class="spec-label">Square Footage:</span>
+                <span class="spec-value">2,800 sq ft</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bathrooms:</span>
+                <span class="spec-value">2.5</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Style:</span>
+                <span class="spec-value">Mountain Modern</span>
+              </div>
+            </div>
+            <a href="contact.html" class="btn">Customize Plan</a>
+          </div>
+        </div>
+
+        <div class="floor-plan-card">
+          <div
+            class="floor-plan-image"
+            style="background-image: url('/images/placeholder-home.jpg')"
+          >
+          </div>
+          <div class="floor-plan-content">
+            <h4>Modern Farmhouse</h4>
+            <p>
+              Classic farmhouse charm with contemporary conveniences and open
+              living spaces.
+            </p>
+            <div class="floor-plan-specs">
+              <div class="spec-item">
+                <span class="spec-label">Square Footage:</span>
+                <span class="spec-value">3,200 sq ft</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bedrooms:</span>
+                <span class="spec-value">4</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bathrooms:</span>
+                <span class="spec-value">3</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Style:</span>
+                <span class="spec-value">Farmhouse</span>
+              </div>
+            </div>
+            <a href="contact.html" class="btn">Customize Plan</a>
+          </div>
+        </div>
+
+        <div class="floor-plan-card">
+          <div
+            class="floor-plan-image"
+            style="background-image: url('/images/placeholder-home.jpg')"
+          >
+          </div>
+          <div class="floor-plan-content">
+            <h4>Family Home</h4>
+            <p>
+              Spacious family living with practical layouts designed for growing
+              families.
+            </p>
+            <div class="floor-plan-specs">
+              <div class="spec-item">
+                <span class="spec-label">Square Footage:</span>
+                <span class="spec-value">2,600 sq ft</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bedrooms:</span>
+                <span class="spec-value">4</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bathrooms:</span>
+                <span class="spec-value">2.5</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Style:</span>
+                <span class="spec-value">Traditional</span>
+              </div>
+            </div>
+            <a href="contact.html" class="btn">Customize Plan</a>
+          </div>
+        </div>
+
+        <div class="floor-plan-card">
+          <div
+            class="floor-plan-image"
+            style="background-image: url('/images/placeholder-home.jpg')"
+          >
+          </div>
+          <div class="floor-plan-content">
+            <h4>Ranch Style</h4>
+            <p>
+              Single-level living with accessible design and efficient use of
+              space.
+            </p>
+            <div class="floor-plan-specs">
+              <div class="spec-item">
+                <span class="spec-label">Square Footage:</span>
+                <span class="spec-value">2,200 sq ft</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bedrooms:</span>
+                <span class="spec-value">3</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bathrooms:</span>
+                <span class="spec-value">2</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Style:</span>
+                <span class="spec-value">Ranch</span>
+              </div>
+            </div>
+            <a href="contact.html" class="btn">Customize Plan</a>
+          </div>
+        </div>
+
+        <div class="floor-plan-card">
+          <div
+            class="floor-plan-image"
+            style="background-image: url('/images/placeholder-home.jpg')"
+          >
+          </div>
+          <div class="floor-plan-content">
+            <h4>Multi-Generational Living</h4>
+            <p>
+              Thoughtfully designed spaces for extended family living with
+              privacy and connection.
+            </p>
+            <div class="floor-plan-specs">
+              <div class="spec-item">
+                <span class="spec-label">Square Footage:</span>
+                <span class="spec-value">3,800 sq ft</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bedrooms:</span>
+                <span class="spec-value">5</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bathrooms:</span>
+                <span class="spec-value">4</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Style:</span>
+                <span class="spec-value">Multi-Gen</span>
+              </div>
+            </div>
+            <a href="contact.html" class="btn">Customize Plan</a>
+          </div>
+        </div>
+
+        <div class="floor-plan-card">
+          <div
+            class="floor-plan-image"
+            style="background-image: url('/images/placeholder-home.jpg')"
+          >
+          </div>
+          <div class="floor-plan-content">
+            <h4>Luxury Estate</h4>
+            <p>
+              Grand living spaces with premium features and elegant design
+              throughout.
+            </p>
+            <div class="floor-plan-specs">
+              <div class="spec-item">
+                <span class="spec-label">Square Footage:</span>
+                <span class="spec-value">4,500 sq ft</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bedrooms:</span>
+                <span class="spec-value">5</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Bathrooms:</span>
+                <span class="spec-value">4.5</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Style:</span>
+                <span class="spec-value">Luxury</span>
+              </div>
+            </div>
+            <a href="contact.html" class="btn">Customize Plan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-text">
+            <p>
+              "Hooley Custom Homes transformed our vision into reality. Their
+              attention to detail was exceptional, and the finished home
+              exceeded all our expectations. The process was smooth and they
+              kept us informed every step of the way."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div
+              class="author-image"
+              style="background-image: url('/images/profile-pic.jpg')"
+            >
+            </div>
+            <div class="author-info">
+              <h5>Emily Johnson</h5>
+              <p>Homeowner, Mountain Retreat Project</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-text">
+            <p>
+              "The team was professional and dedicated throughout the process.
+              We couldn't be happier with our new home! Their craftsmanship is
+              evident in every detail, from the custom trim to the beautiful
+              kitchen."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div
+              class="author-image"
+              style="background-image: url('/images/profile-pic.jpg')"
+            >
+            </div>
+            <div class="author-info">
+              <h5>Michael Smith</h5>
+              <p>Project Manager, Custom Home Build</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="testimonial-text">
+            <p>
+              "Our basement apartment conversion has been generating income
+              since day one. Hooley Custom Homes handled everything from permits
+              to finishing touches. Their expertise in income properties is
+              unmatched."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <div
+              class="author-image"
+              style="background-image: url('/images/profile-pic.jpg')"
+            >
+            </div>
+            <div class="author-info">
+              <h5>The Andersons</h5>
+              <p>Income Property Conversion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="container">
+      <h2>Ready to Start Your Dream Project?</h2>
+      <p>
+        Contact us today for a free consultation and let's bring your vision to
+        life in beautiful Central Utah.
+      </p>
+      <a href="contact.html" class="btn">Get Your Free Estimate</a>
+    </div>
+  </section>
+
+  <Footer />
+
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Hooley Custom Homes LLC",
+      "description": "Premier custom home builder serving Sanpete & Juab County with custom homes, renovations, and remodeling services.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "330 South 200 East",
+        "addressLocality": "Fairview",
+        "addressRegion": "UT",
+        "postalCode": "84629",
+        "addressCountry": "US"
+      },
+      "telephone": "(435) 469-2059",
+      "email": "hooleydrywall@gmail.com",
+      "url": "https://www.hooleycustomhomes.com",
+      "sameAs": [
+        "https://www.facebook.com/drywallcontractor/",
+        "https://www.instagram.com/hooleygeneralcontracting"
+      ],
+      "serviceArea": [
+        "Sanpete County, UT",
+        "Juab County, UT",
+        "Ephraim, UT",
+        "Manti, UT",
+        "Fairview, UT",
+        "Mount Pleasant, UT"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Custom Home Building Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Home Building",
+              "description": "Complete custom home construction services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Home Renovations",
+              "description": "Comprehensive home renovation and remodeling services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Home Additions",
+              "description": "Custom home additions and extensions"
+            }
+          }
+        ]
+      }
+    }
+  </script>
+</Layout>
