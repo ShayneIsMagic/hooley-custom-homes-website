@@ -235,7 +235,8 @@ npm run build        # Fresh build
 ### Important URLs
 - **GitHub Repository**: `https://github.com/ShayneIsMagic/hooley-custom-homes-website`
 - **Cloudflare Dashboard**: `https://dash.cloudflare.com/pages`
-- **Your Site**: `https://hooley-custom-homes.pages.dev`
+- **Your Site**: `
+`
 
 ### Build Settings
 - **Framework**: Astro
