@@ -14,25 +14,25 @@ html {
 
 /* Ensure proper positioning for anchor links */
 [id] {
-  scroll-margin-top: 150px; /* Account for fixed header */
+  scroll-margin-top: 200px; /* Account for fixed header */
 }
 
 /* Responsive adjustments for anchor positioning */
 @media (min-width: 768px) {
   [id] {
-    scroll-margin-top: 180px; /* More space for tablet */
+    scroll-margin-top: 250px; /* More space for tablet */
   }
 }
 
 @media (min-width: 1024px) {
   [id] {
-    scroll-margin-top: 200px; /* More space for laptop */
+    scroll-margin-top: 300px; /* More space for laptop */
   }
 }
 
 @media (min-width: 1200px) {
   [id] {
-    scroll-margin-top: 220px; /* Even more space for large desktop */
+    scroll-margin-top: 350px; /* Even more space for large desktop */
   }
 }
 
@@ -898,7 +898,7 @@ footer {
 }
 
 .service-header-wrapper {
-  scroll-margin-top: 200px; /* Specific positioning for service header wrappers */
+  scroll-margin-top: 300px; /* Specific positioning for service header wrappers */
 }
 
 .service-text p {
