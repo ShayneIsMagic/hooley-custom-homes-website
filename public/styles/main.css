@@ -14,25 +14,25 @@ html {
 
 /* Ensure proper positioning for anchor links */
 [id] {
-  scroll-margin-top: 120px; /* Account for fixed header - positioned below header */
+  scroll-margin-top: 170px; /* Fixed header (119.59px) + 50px padding for mobile */
 }
 
 /* Responsive adjustments for anchor positioning */
 @media (min-width: 768px) {
   [id] {
-    scroll-margin-top: 140px; /* More space for tablet */
+    scroll-margin-top: 190px; /* More space for tablet */
   }
 }
 
 @media (min-width: 1024px) {
   [id] {
-    scroll-margin-top: 160px; /* More space for laptop */
+    scroll-margin-top: 210px; /* More space for laptop */
   }
 }
 
 @media (min-width: 1200px) {
   [id] {
-    scroll-margin-top: 180px; /* Even more space for large desktop */
+    scroll-margin-top: 230px; /* Even more space for large desktop */
   }
 }
 
