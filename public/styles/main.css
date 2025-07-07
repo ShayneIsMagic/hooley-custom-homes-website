@@ -14,7 +14,20 @@ html {
 
 /* Ensure proper positioning for anchor links */
 [id] {
-  scroll-margin-top: 100px; /* Account for fixed header */
+  scroll-margin-top: 120px; /* Account for fixed header */
+}
+
+/* Responsive adjustments for anchor positioning */
+@media (min-width: 768px) {
+  [id] {
+    scroll-margin-top: 140px; /* More space for desktop */
+  }
+}
+
+@media (min-width: 1200px) {
+  [id] {
+    scroll-margin-top: 160px; /* Even more space for large desktop */
+  }
 }
 
 * {
