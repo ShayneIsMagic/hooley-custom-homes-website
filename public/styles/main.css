@@ -895,7 +895,10 @@ footer {
   font-size: 2rem;
   margin-bottom: 20px;
   color: var(--primary);
-  scroll-margin-top: 200px; /* Specific positioning for service headers */
+}
+
+.service-header-wrapper {
+  scroll-margin-top: 200px; /* Specific positioning for service header wrappers */
 }
 
 .service-text p {
