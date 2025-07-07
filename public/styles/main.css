@@ -7,6 +7,16 @@
   --light-gray: #dee6ef;
 }
 
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure proper positioning for anchor links */
+[id] {
+  scroll-margin-top: 100px; /* Account for fixed header */
+}
+
 * {
   margin: 0;
   padding: 0;
