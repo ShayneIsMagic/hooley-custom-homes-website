@@ -545,11 +545,14 @@ footer {
 /* About Page */
 /* Our Story Section */
 .story-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 40px;
-  align-items: center;
   margin-bottom: 60px;
+}
+
+.story-image {
+  width: 100%;
 }
 
 .story-image img {
@@ -557,7 +560,12 @@ footer {
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
-  padding-left: 20px;
+}
+
+.story-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .story-text h3 {
@@ -1549,15 +1557,20 @@ textarea.form-control {
 /* Media Queries */
 @media (max-width: 992px) {
   .story-content {
-    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .story-image {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .story-image img {
-    padding-left: 0;
+    height: 300px;
+  }
+
+  .story-text {
+    max-width: 100%;
+    padding: 0 20px;
   }
 
   .stats-container {
@@ -1718,5 +1731,17 @@ textarea.form-control {
 
   .contact-container {
     flex-direction: column;
+  }
+
+  .story-content {
+    gap: 20px;
+  }
+
+  .story-image img {
+    height: 250px;
+  }
+
+  .story-text {
+    padding: 0 15px;
   }
 }
