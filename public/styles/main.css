@@ -1822,3 +1822,20 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 }
+
+.building-dreams-padded {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+@media (max-width: 900px) {
+  .building-dreams-padded {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .building-dreams-padded {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
