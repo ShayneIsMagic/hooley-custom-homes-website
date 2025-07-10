@@ -743,18 +743,30 @@ footer {
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
   margin-top: 50px;
-  justify-content: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .value-item {
   background-color: var(--light);
-  padding: 30px;
-  border-radius: 10px;
+  padding: 40px 30px;
+  border-radius: 15px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
 .value-icon {
@@ -1622,6 +1634,7 @@ textarea.form-control {
   .featured-image {
     margin-bottom: 30px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -1743,5 +1756,15 @@ textarea.form-control {
 
   .story-text {
     padding: 0 15px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .value-item {
+    padding: 25px 20px;
   }
 }
