@@ -544,15 +544,20 @@ footer {
 
 /* About Page */
 /* Our Story Section */
+.story-section {
+  margin-bottom: 40px;
+}
+
 .story-content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
-  margin-bottom: 60px;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .story-image {
-  width: 100%;
+  padding-left: 30px;
 }
 
 .story-image img {
@@ -563,9 +568,8 @@ footer {
 }
 
 .story-text {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
+  max-width: 100%;
+  text-align: left;
 }
 
 .story-text h3 {
@@ -1766,5 +1770,36 @@ textarea.form-control {
 
   .value-item {
     padding: 25px 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .story-image {
+    padding-left: 0;
+  }
+  .story-image img {
+    height: 300px;
+  }
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .story-image img {
+    height: 200px;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
   }
 }
