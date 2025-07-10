@@ -554,8 +554,10 @@ footer {
 
 .story-image img {
   width: 100%;
+  height: 400px;
+  object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding-left: 20px;
 }
 
 .story-text h3 {
@@ -665,9 +667,13 @@ footer {
 /* Team Section */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-top: 50px;
+  justify-content: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-member {
@@ -710,6 +716,18 @@ footer {
   font-size: 0.9rem;
 }
 
+.team-bio a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.team-bio a:hover {
+  color: #3a8bc0;
+  text-decoration: underline;
+}
+
 /* Values Section */
 .values {
   background-color: var(--light-gray);
@@ -717,9 +735,10 @@ footer {
 
 .values-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .value-item {
@@ -1537,6 +1556,10 @@ textarea.form-control {
     margin-bottom: 30px;
   }
 
+  .story-image img {
+    padding-left: 0;
+  }
+
   .stats-container {
     flex-wrap: wrap;
   }
@@ -1591,6 +1614,11 @@ textarea.form-control {
 @media (max-width: 768px) {
   .page-banner h1 {
     font-size: 2.5rem;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
   }
 
   .mobile-toggle {
